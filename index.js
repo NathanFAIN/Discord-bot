@@ -7,7 +7,7 @@ var lastMessageId = 0;
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Ta mere', { type: 'CUSTOM_STATUS', name: 'Type !help'});
+    client.user.setActivity('BlaBlaBot', { type: 'CUSTOM_STATUS', name: 'Type !help'});
 
     if(fs.existsSync('save.json')) {
         fs.readFile('save.json', function (err, json_string) {
